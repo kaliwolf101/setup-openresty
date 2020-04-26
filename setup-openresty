@@ -469,7 +469,7 @@ download \
 
 printf "Downloading RTMP Module ${NGINX_RTMP_MODULE_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
 download \
-  "https://github.com/arut/nginx-rtmp-module/archive/v${NGINX_RTMP_MODULE_VERSION}.tar.gz" \
+  "https://github.com/arut/sergey-dryabzhinsky/archive/v${NGINX_RTMP_MODULE_VERSION}.tar.gz" \
   "nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}.tar.gz" 2>&1 | tee -a ${DOWNLOAD_LOGFILE}
 
 printf "Downloading FLV module ${NGINX_HTTP_FLV_MODULE_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
@@ -511,7 +511,7 @@ extract "lua-${LUA_VERSION}" ".tar.gz"
 printf "Extracting Stream Echo Module...\n"
 extract "stream-echo-nginx-module-${STREAM_ECHO_NGINX_MODULE_VERSION}" ".tar.gz"
 
-printf "Extracting RTMP module\n"
+printf "Extracting module\n"
 extract "nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}" ".tar.gz"
 
 printf "Extracting FLV module\n"
