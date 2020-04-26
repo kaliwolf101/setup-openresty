@@ -469,7 +469,7 @@ download \
 
 printf "Downloading RTMP Module ${NGINX_RTMP_MODULE_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
 download \
-  "https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/archive/${NGINX_RTMP_MODULE_VERSION}.tar.gz" \
+  "https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/archive/v${NGINX_RTMP_MODULE_VERSION}.tar.gz" \
   "nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}.tar.gz" 2>&1 | tee -a ${DOWNLOAD_LOGFILE}
 
 printf "Downloading FLV module ${NGINX_HTTP_FLV_MODULE_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
