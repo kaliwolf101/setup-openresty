@@ -479,12 +479,12 @@ download \
 
 printf "Downloading Nginx Lua IPC Module ${NGX_LUA_IPC_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
 download \
-  "https://github.com/slact/ngx_lua_ipc/archive/${NGX_LUA_IPC_VERSION}.tar.gz" \
+  "https://github.com/slact/ngx_lua_ipc/archive/v${NGX_LUA_IPC_VERSION}.tar.gz" \
   "ngx_lua_ipc-${NGX_LUA_IPC_VERSION}.tar.gz" 2>&1 | tee -a ${DOWNLOAD_LOGFILE}
 
 printf "Downloading nchan Module ${NCHAN_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
 download \
-  "https://github.com/slact/nchan/archive/${NCHAN_VERSION}.tar.gz" \
+  "https://github.com/slact/nchan/archive/v${NCHAN_VERSION}.tar.gz" \
   "nchan-${NCHAN_VERSION}.tar.gz" 2>&1 | tee -a ${DOWNLOAD_LOGFILE}
 
 printf "Downloading lua-io module ${LUA_IO_VERSION}\n" | tee -a ${DOWNLOAD_LOGFILE}
